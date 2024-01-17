@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8O+pbIl0q29J/+Q8cbcYIEQHiLWoJeKp3xvPTGFIepY=",
+  "Source": "DotNet6Authorization",
+  "BasePath": "_content/DotNet6Authorization",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
