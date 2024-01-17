@@ -213,3 +213,4 @@ C:\Rumi Projrcts\Nybsys Task\DotNet6RoleBasedAuthorization\DotNet6Authorization\
 C:\Rumi Projrcts\Nybsys Task\DotNet6RoleBasedAuthorization\DotNet6Authorization\obj\Debug\net8.0\DotNet6Authorization.pdb
 C:\Rumi Projrcts\Nybsys Task\DotNet6RoleBasedAuthorization\DotNet6Authorization\obj\Debug\net8.0\DotNet6Authorization.genruntimeconfig.cache
 C:\Rumi Projrcts\Nybsys Task\DotNet6RoleBasedAuthorization\DotNet6Authorization\obj\Debug\net8.0\ref\DotNet6Authorization.dll
+C:\Rumi Projrcts\Nybsys Task\DotNet6RoleBasedAuthorization\DotNet6Authorization\obj\Debug\net8.0\DotNet6Authorization.sourcelink.json

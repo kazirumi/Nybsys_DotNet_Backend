@@ -28,7 +28,7 @@ namespace DotNet6Authorization.Controllers
 
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles ="Admin")]
         //GET : /api/User
         public async Task<List<ApplicationUser>> GetUserList()
         {
@@ -43,7 +43,7 @@ namespace DotNet6Authorization.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         //GET : /api/User
         public async Task<ActionResult> EditUser(string id,RequestUserModel userModel)
         {
@@ -64,7 +64,7 @@ namespace DotNet6Authorization.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         //GET : /api/User
         public async Task<ActionResult> DeleteUser(string id)
         {
