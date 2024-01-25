@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotNet6Authorization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3332b900f11b75a5f893f7779a1843a634f7a669")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dfb18c82557df3b0b5b400e661b62f2c1a7ea15")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotNet6Authorization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotNet6Authorization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

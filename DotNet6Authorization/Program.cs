@@ -1,3 +1,4 @@
+using DotNet6Authorization.Authorization;
 using DotNet6Authorization.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -85,6 +86,7 @@ builder.Services.AddAuthentication(x =>
     };
 
 });
+builder.Services.AddScoped<IJwtUtils, JwtUtils>();
 
 builder.Services.AddControllers().AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null); ;
 
@@ -93,9 +95,10 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseAuthentication();
+//app.UseAuthentication();
 app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
+app.UseMiddleware<JwtMiddleware>();
 
 
 app.MapControllers();
