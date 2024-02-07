@@ -97,7 +97,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 //app.UseAuthentication();
 app.UseCors(MyAllowSpecificOrigins);
-app.UseAuthorization();
+//app.UseAuthorization();
 app.UseMiddleware<JwtMiddleware>();
 
 

@@ -14,5 +14,8 @@ namespace DotNet6Authorization.Models
 
         [NotMapped]
         public string Role { get; set; }
+
+        //public virtual ICollection<AspNetRole> Roles { get; set; } = new List<AspNetRole>();
+
     }
 }

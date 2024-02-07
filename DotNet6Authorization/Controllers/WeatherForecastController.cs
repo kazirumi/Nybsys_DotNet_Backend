@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+using DotNet6Authorization.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Web.Resource;
 
@@ -6,6 +6,8 @@ namespace DotNet6Authorization.Controllers
 {
     //[Authorize(Roles ="Admin")]
     [ApiController]
+    [AllowAnonymous]
+
     [Route("[controller]")]
     [RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
     public class WeatherForecastController : ControllerBase

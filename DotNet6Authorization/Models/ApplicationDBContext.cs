@@ -15,7 +15,9 @@ namespace DotNet6Authorization.Models
 
         }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-      
+
+        //public DbSet<AspNetRole> AspNetRoles { get; set; }
+
 
     }
 

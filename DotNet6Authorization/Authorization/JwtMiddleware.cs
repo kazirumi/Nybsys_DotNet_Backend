@@ -46,7 +46,7 @@ namespace DotNet6Authorization.Authorization
                 if (userId != null)
                 {
                     //attach user to context on successful jwt validation
-                    context.Items["User"] = _userManager.FindByIdAsync(userId);
+                    context.Items["User"] =await _userManager.FindByIdAsync(userId);
                 }
                 else
                 {

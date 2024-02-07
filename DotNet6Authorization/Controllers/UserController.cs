@@ -1,6 +1,8 @@
 ﻿
+using DotNet6Authorization.Authorization;
+using DotNet6Authorization.Entity;
 using DotNet6Authorization.Models;
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +30,9 @@ namespace DotNet6Authorization.Controllers
 
 
         [HttpGet]
-        [Authorize(Roles ="Admin")]
+        [AllowAnonymous]
+        [Authorize(Role.Admin)]
+        //[Authorize(Roles ="Admin")]
         //GET : /api/User
         public async Task<List<ApplicationUser>> GetUserList()
         {
@@ -43,7 +47,8 @@ namespace DotNet6Authorization.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Role.Admin)]
+        //[Authorize(Roles = "Admin")]
         //GET : /api/User
         public async Task<ActionResult> EditUser(string id,RequestUserModel userModel)
         {
@@ -64,7 +69,8 @@ namespace DotNet6Authorization.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Role.Admin)]
+        //[Authorize(Roles = "Admin")]
         //GET : /api/User
         public async Task<ActionResult> DeleteUser(string id)
         {
